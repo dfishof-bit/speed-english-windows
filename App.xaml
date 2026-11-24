@@ -86,8 +86,8 @@
         </Style>
 
         <Style x:Key="AnswerButtonStyle" TargetType="Button">
-            <Setter Property="Height" Value="56" />
-            <Setter Property="Margin" Value="0,0,0,10" />
+            <Setter Property="Height" Value="48" />
+            <Setter Property="Margin" Value="0,0,0,8" />
             <Setter Property="FontSize" Value="19" />
             <Setter Property="FontWeight" Value="SemiBold" />
             <Setter Property="Background" Value="White" />
