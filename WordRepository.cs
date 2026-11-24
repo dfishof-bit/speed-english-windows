@@ -31,7 +31,7 @@ public static class WordRepository
     {
         var asm = Assembly.GetExecutingAssembly();
         var resName = asm.GetManifestResourceNames()
-            .FirstOrDefault(n => n.EndsWith(suffix, StringComparison.OrdinalIgnoreCase))
+            .FirstOrDefault(n => n.EndsWith("." + suffix, StringComparison.OrdinalIgnoreCase))
             ?? throw new FileNotFoundException("Embedded dictionary not found: " + suffix);
 
         using var stream = asm.GetManifestResourceStream(resName)!;
